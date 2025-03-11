@@ -46,7 +46,7 @@ app.post("/analyze", async (req, res) => {
 
         if (existingUrlData) {
             console.log("URL already analyzed. Using existing data.");
-            const mostFrequentWords = existingUrlData.wordsData;
+            const mostFrequentWords = existingUrlData.wordsData.slice(0, nVal);
             return res.render('analysis.ejs', {mostFrequentWords, url, nVal});
         }
 
