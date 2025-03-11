@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis</title>
+
+    <link rel="stylesheet" href="/table.css">
+
+</head>
+<body>
+
+    <form method="get" action="/">
+        <button class="analyzeNewUrl">Analyze for a new url</button>
+    </form>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>Word</th>
+                <th>Frequency</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% mostFrequentWords.forEach(function(item) { %>
+                <tr>
+                    <td><%= item.word %></td> 
+                    <td><%= item.count %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+
+</body>
+</html>

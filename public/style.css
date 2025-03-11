@@ -1,0 +1,52 @@
+/* Removes default margin and padding*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centers content horizontally and vertically */
+.mainBox {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    height: 100vh;          /* Makes the div fill the viewport height */
+}
+
+/* Stacks elements vertically and centers the form */
+form {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    gap: 15px;             /* Add spacing between the elements */
+    width: 500px;  
+    margin: 0 auto;        /* Center the form horizontally */
+}
+
+/* Input fields: Adds padding, width, and spacing */
+form input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Submit button: Styling and hover effect */
+#analyze {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width for the button */
+    margin-top: 20px; /* Some space from the input fields */
+    font-size: 1.1rem;
+}
+
+/* Button hover effect: Changes background color on hover */
+form button:hover {
+    background-color: #0056b3;
+}

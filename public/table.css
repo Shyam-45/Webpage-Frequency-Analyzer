@@ -1,0 +1,41 @@
+/* New url analysis */
+.analyzeNewUrl {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Table body styling */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table head, Table data styling */
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem; /* Smaller text for better fitting */
+}
+
+th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* To give alternate color for better style */
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
